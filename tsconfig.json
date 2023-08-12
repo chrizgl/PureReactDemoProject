@@ -1,16 +1,13 @@
 {
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "dist",
-    "node_modules"
-  ],
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"],
   "compilerOptions": {
     "module": "esnext",
-    "lib": [
-      "dom",
-      "esnext"
+    "lib": ["dom", "esnext"],
+    "types": [
+      // ... your other types
+      "node",
+      "mocha"
     ],
     "importHelpers": true,
     "declaration": true,
@@ -26,6 +23,6 @@
     "jsx": "react",
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "forceConsistentCasingInFileNames": true
   }
 }
